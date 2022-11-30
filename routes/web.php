@@ -18,16 +18,31 @@ Route::get('/', function () {
 });
 
 Route::get('/min/basic', function () {
-    return view('Sommen.Min.Basic');
+    return view('Sommen.Min.basic');
 });
+Route::get('/min/advanced', function () {
+    return view('Sommen.Min.advanced');
+});
+
 Route::get('/plus/basic', function () {
-    return view('Sommen.Plus.Basic');
+    return view('Sommen.Plus.basic');
 });
+Route::get('/plus/advanced', function () {
+    return view('Sommen.Plus.advanced');
+});
+
 Route::get('/delen/basic', function () {
-    return view('Sommen.Divide.Basic');
+    return view('Sommen.Divide.basic');
 });
+Route::get('/delen/advanced', function () {
+    return view('Sommen.Divide.advanced');
+});
+
 Route::get('/keer/basic', function () {
-    return view('Sommen.Times.Basic');
+    return view('Sommen.Times.basic');
+});
+Route::get('/keer/advanced', function () {
+    return view('Sommen.Times.advanced');
 });
 
 Route::middleware([
