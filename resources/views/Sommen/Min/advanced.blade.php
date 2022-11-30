@@ -13,7 +13,7 @@
 
     <body>
         <?php
-        $value1 = rand(0, 20);
+        $value1 = rand(0, 100);
         $value2 = rand(0, $value1);
         $value3 = $value1 - $value2;
         echo $value1;
