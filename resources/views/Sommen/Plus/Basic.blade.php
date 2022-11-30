@@ -9,7 +9,16 @@
 </head>
 
 <body>
-
+    <?php
+    $value1 = rand(0, 20);
+    $value2 = rand(0, $value1);
+    $value3 = $value1 + $value2;
+    echo $value1;
+    echo ' + ';
+    echo $value2;
+    echo ' = ';
+    echo $value3;
+    ?>
 </body>
 
 </html>
