@@ -14,14 +14,9 @@
     $value2 = rand(0, $value1);
     $value3 = $value1 - $value2;
     echo $value1;
-    ?>
-    <br>
-    <?php
-
+    echo ' - ';
     echo $value2;
-    ?>
-    <br>
-    <?php
+    echo ' = ';
     echo $value3;
     ?>
 </body>
