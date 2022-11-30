@@ -13,9 +13,24 @@
 
 <body>
     <?php
-    $value1 = rand(0, 50);
-    $value2 = rand(0, 50);
-    $value2 - $value1;
+    createSum();
+    function createSum()
+    {
+        $value2 = rand(1, 50);
+        $value1 = rand(1, $value2 - 1);
+        $value3 = $value2 / $value1;
+        if (is_float($value3)) {
+            createSum();
+        } else {
+            echo $value2;
+            echo " ";
+            echo $value1;
+            echo " ";
+            echo $value3;
+        }
+    }
+
+
     ?>
 </body>
 
