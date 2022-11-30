@@ -23,12 +23,18 @@ Route::get('/min/basic', function () {
 Route::get('/min/advanced', function () {
     return view('Sommen.Min.advanced');
 });
+Route::get('/min/expert', function () {
+    return view('Sommen.Min.expert');
+});
 
 Route::get('/plus/basic', function () {
     return view('Sommen.Plus.basic');
 });
 Route::get('/plus/advanced', function () {
     return view('Sommen.Plus.advanced');
+});
+Route::get('/plus/expert', function () {
+    return view('Sommen.Plus.expert');
 });
 
 Route::get('/delen/basic', function () {
@@ -37,12 +43,18 @@ Route::get('/delen/basic', function () {
 Route::get('/delen/advanced', function () {
     return view('Sommen.Divide.advanced');
 });
+Route::get('/delen/expert', function () {
+    return view('Sommen.Divide.expert');
+});
 
 Route::get('/keer/basic', function () {
     return view('Sommen.Times.basic');
 });
 Route::get('/keer/advanced', function () {
     return view('Sommen.Times.advanced');
+});
+Route::get('/keer/expert', function () {
+    return view('Sommen.Times.expert');
 });
 
 Route::middleware([
