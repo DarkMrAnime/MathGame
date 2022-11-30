@@ -20,14 +20,29 @@ Route::get('/', function () {
 Route::get('/min/basic', function () {
     return view('Sommen.Min.Basic');
 });
+Route::get('/min/advanced', function () {
+    return view('Sommen.Min.advanced');
+});
+
 Route::get('/plus/basic', function () {
     return view('Sommen.Plus.Basic');
 });
+Route::get('/plus/advanced', function () {
+    return view('Sommen.Plus.advanced');
+});
+
 Route::get('/delen/basic', function () {
     return view('Sommen.Divide.Basic');
 });
+Route::get('/delen/advanced', function () {
+    return view('Sommen.Divide.advanced');
+});
+
 Route::get('/keer/basic', function () {
     return view('Sommen.Times.Basic');
+});
+Route::get('/keer/advanced', function () {
+    return view('Sommen.Times.advanced');
 });
 
 Route::middleware([
