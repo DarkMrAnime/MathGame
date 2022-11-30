@@ -15,7 +15,8 @@
             padding-right: 2.5%;
             padding-top: 3%;
             padding-bottom: 3%;
-       
+            position: absolute;
+            bottom: 0;
         }    
         .logo{
             font-size: 1.4rem;
