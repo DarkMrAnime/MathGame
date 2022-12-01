@@ -17,16 +17,14 @@
         function createSum()
         {
             $value2 = rand(20, 100);
-            $value1 = rand(1, $value2 - 1);
+            $value1 = rand(1, $value2);
             $value3 = $value2 / $value1;
             if (is_float($value3)) {
                 createSum();
             } else {
                 echo $value2;
-                echo ' / ';
+                echo ' ÷ ';
                 echo $value1;
-                echo ' = ';
-                echo $value3;
             }
         }
         
