@@ -12,13 +12,20 @@
 
     <!-- Styles -->
     <style>
+        body{
+            background-image: url("images/achtergrond.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 
 <body class="antialiased">
     @include('homepagina.navbar')
 
-
+    @include('homepagina.overzicht')
 
     @include('homepagina.footer')
 </body>
