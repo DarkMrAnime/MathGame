@@ -12,15 +12,34 @@
 
     <!-- Styles -->
     <style>
+        body{
+            background-image: url("images/achtergrond.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .block{
+            background-color: white;
+            width: 80%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
     </style>
 </head>
 
 <body class="antialiased">
     @include('homepagina.navbar')
-
-
-
-    @include('homepagina.footer')
+    <div class="block">
+    @include('homepagina.overzicht')
+    </div>
+    {{-- @include('homepagina.footer') --}}
 </body>
 
 </html>

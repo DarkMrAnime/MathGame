@@ -16,7 +16,7 @@
         createSum();
         function createSum()
         {
-            $value2 = rand(1, 50);
+            $value2 = rand(50, 200);
             $value1 = rand(1, $value2);
             $value3 = $value2 / $value1;
             if (is_float($value3)) {
