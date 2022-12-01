@@ -17,17 +17,44 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/min', function () {
-    return view('Sommen.Min.index');
+Route::get('/min/basic', function () {
+    return view('Sommen.Min.basic');
 });
-Route::get('/plus', function () {
-    return view('Sommen.Plus.index');
+Route::get('/min/advanced', function () {
+    return view('Sommen.Min.advanced');
 });
-Route::get('/delen', function () {
-    return view('Sommen.Divide.index');
+Route::get('/min/expert', function () {
+    return view('Sommen.Min.expert');
 });
-Route::get('/keer', function () {
-    return view('Sommen.Times.index');
+
+Route::get('/plus/basic', function () {
+    return view('Sommen.Plus.basic');
+});
+Route::get('/plus/advanced', function () {
+    return view('Sommen.Plus.advanced');
+});
+Route::get('/plus/expert', function () {
+    return view('Sommen.Plus.expert');
+});
+
+Route::get('/delen/basic', function () {
+    return view('Sommen.Divide.basic');
+});
+Route::get('/delen/advanced', function () {
+    return view('Sommen.Divide.advanced');
+});
+Route::get('/delen/expert', function () {
+    return view('Sommen.Divide.expert');
+});
+
+Route::get('/keer/basic', function () {
+    return view('Sommen.Times.basic');
+});
+Route::get('/keer/advanced', function () {
+    return view('Sommen.Times.advanced');
+});
+Route::get('/keer/expert', function () {
+    return view('Sommen.Times.expert');
 });
 
 Route::middleware([
