@@ -19,15 +19,27 @@
             background-repeat: no-repeat;
             background-size: cover;
         }
+        .block{
+            background-color: white;
+            width: 80%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
     </style>
 </head>
 
 <body class="antialiased">
     @include('homepagina.navbar')
-
+    <div class="block">
     @include('homepagina.overzicht')
-
-    @include('homepagina.footer')
+    </div>
+    {{-- @include('homepagina.footer') --}}
 </body>
 
 </html>
