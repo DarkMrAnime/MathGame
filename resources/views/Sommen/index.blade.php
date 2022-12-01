@@ -8,13 +8,17 @@
     <!-- <link rel="stylesheet" href="/resources/views/Sommen/app.css" /> -->
     <title>Menu</title>
     <style>
-        body {
-            margin: 0px;
-            background: url() no-repeat center center fixed;
+        html {
+            background: url("/images/achtergrond.jpg") no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
+        }
+
+        body {
+            margin: 0px;
+
         }
 
         .main-container {
@@ -24,13 +28,15 @@
         }
 
         .sum-container {
+            background-color: white;
             width: 80%;
             height: 500px;
             display: flex;
             justify-content: center;
-            font-size: 2em;
+            font-size: 2.5em;
             font-weight: bold;
             border-radius: 10px;
+            padding-top: 25px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         }
     </style>
