@@ -13,7 +13,7 @@
     <!-- Styles -->
     <style>
         body{
-            background-image: url("images/achtergrond.jpg");
+            background-color: #FCEADE;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
