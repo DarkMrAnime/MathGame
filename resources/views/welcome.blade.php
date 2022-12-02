@@ -12,12 +12,8 @@
 
     <!-- Styles -->
     <style>
-        body{
+        html{
             background-color: #FCEADE;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
         }
         .block{
             background-color: white;
