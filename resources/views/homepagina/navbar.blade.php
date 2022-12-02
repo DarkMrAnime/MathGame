@@ -20,7 +20,7 @@
 
             /* nav styles */
             header{
-                background-color: #FF8A5B;
+                background-color: #25CED1;
                 padding: .5rem 0;
             }
             nav{
@@ -48,14 +48,14 @@
             }
 
             .menu a:hover{
-                background-color:#FCEADE;
+                background-color:#FF8A5B;
                 color: black;
             }
 
             .submenu{
                 position: absolute;
                 z-index: 10;
-                background-color: #FCEADE;
+                background-color: #FF8A5B;
                 width: 140px;
                 left: 0;
                 display: none;
