@@ -12,11 +12,12 @@
         @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
         html {
-            background-color: #29E2E6;
+            background-color: #FCEADE;
         }
 
         body {
             margin: 0px;
+
 
         }
 
