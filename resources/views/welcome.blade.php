@@ -13,7 +13,7 @@
     <!-- Styles -->
     <style>
         body{
-            background-image: url("images/achtergrond.jpg");
+            background-color: #FCEADE;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -25,20 +25,25 @@
             height: 500px;
             display: flex;
             justify-content: center;
-            font-size: 2em;
-            font-weight: bold;
             border-radius: 10px;
+            padding-top: 25px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-}
+            }
+        .main{
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
     </style>
 </head>
 
 <body class="antialiased">
     @include('homepagina.navbar')
+<div class="main">
     <div class="block">
     @include('homepagina.overzicht')
     </div>
+</div>
     {{-- @include('homepagina.footer') --}}
 </body>
 
