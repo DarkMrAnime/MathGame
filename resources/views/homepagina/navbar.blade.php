@@ -1,14 +1,21 @@
 <style>
-    html,
-    body {
-        height: 100%;
-    }
+    html,body{
+                height: 100%;
+            }
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            ul{
+                list-style: none;
+            }
+            body{
+                font-size: 1rem;
+                line-height: 1.6;
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+                color: #666;
+            }
 
             /* nav styles */
             header{
@@ -23,24 +30,25 @@
                 align-items: center;
             }
 
-    nav {
-        max-width: 90%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+            .menu > li, .menu > a{
+                display: inline-block;
+            }
 
-    body {
-        font-size: 1rem;
-        line-height: 1.6;
+            .menu li {
+                position: relative;
+            }
 
-        color: #666;
-    }
+            .menu a {
+                text-decoration: none;
+                color: #fff;
+                display: block;
+                padding: 10px 1.5rem;
+                transition: background-color .22s ease, color .22s ease;
+            }
 
             .menu a:hover{
-                background-color:#FF8A5B;
-                color: black;
+                background-color: #FF8A5B;
+                color: #fff;
             }
 
             .submenu{
@@ -52,95 +60,60 @@
                 display: none;
             }
 
-    .submenu {
-        position: absolute;
-        z-index: 10;
-        background-color: #FCEADE;
-        width: 140px;
-        left: 0;
-        display: none;
-    }
+            .submenu2 {
+                position: absolute;
+                left: 100%;
+                width: 140px;
+                top: 0;
+                background-color: #2c3e50;
+                display: none;
+            }
 
-    .menu li {
-        position: relative;
-    }
+            .menu li:hover > .submenu{
+                display: block;
+                animation: slideup .3s ease;
+            }
 
-    .menu a {
-        text-decoration: none;
-        color: white;
-        display: block;
-        padding: 10px 1.5rem;
-        transition: background-color .22s ease, color .22s ease;
-    }
+            .submenu li:hover > .submenu2{
+                display: block;
+                animation: slideleft .3s ease;
+            }
 
-    .menu a:hover {
-        background-color: #FF8A5B;
-        color: #ffff;
-    }
+            @keyframes slideup {
+                0%{
+                    opacity: 0;
+                    transform: translateY(18px);
+                }
 
-    .submenu {
-        position: absolute;
-        z-index: 10;
-        background-color: #25CED1;
-        width: 140px;
-        left: 0;
-        display: none;
-    }
+                100%{
+                    opacity: 1;
+                    transform: none;
+                }
+            }
 
-    .submenu2 {
-        position: absolute;
-        left: 100%;
-        width: 140px;
-        top: 0;
-        background-color: #212121;
-        display: none;
-    }
+            @keyframes slideleft {
+                0%{
+                    opacity: 0;
+                    transform: translateX(18px);
+                }
 
-    .menu li:hover>.submenu {
-        display: block;
-        animation: slideup .3s ease;
-    }
+                100%{
+                    opacity: 1;
+                    transform: none;
+                }
+            }
 
-    .submenu li:hover>.submenu2 {
-        display: block;
-        animation: slideleft .3s ease;
-    }
+            /* logo styles */
+            .LogoPhoto{
+                width: 70px;
+            }
+            a:active, a:focus {
+                outline: 0;
+                border: none;
+                -moz-outline-style: none;
+            }
 
-    @keyframes slideup {
-        0% {
-            opacity: 0;
-            transform: translateY(18px);
-        }
 
-        100% {
-            opacity: 1;
-            transform: none;
-        }
-    }
-
-    @keyframes slideleft {
-        0% {
-            opacity: 0;
-            transform: translateX(18px);
-        }
-
-        100% {
-            opacity: 1;
-            transform: none;
-        }
-    }
-
-    /* logo styles */
-    .LogoPhoto {
-        width: 70px;
-    }
-
-    a:active,
-    a:focus {
-        outline: 0;
-        border: none;
-        -moz-outline-style: none;
-    }
 </style>
 
 <header>
@@ -148,13 +121,6 @@
         <img class="LogoPhoto" src="" alt="">
         <ul class="menu" style="padding-left:10px">
             <li><a href="/">Home</a></li>
-            <li><a href=""></a>
-                <ul class="submenu">
-
-                    <li><a href=""></a>
-                    </li>
-                </ul>
-            </li>
             <li><a href="/contact">Contact</a></li>
             <li>
                 @if (Route::has('login'))
