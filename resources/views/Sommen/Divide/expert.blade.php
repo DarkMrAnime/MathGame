@@ -25,6 +25,7 @@
                 echo $value2;
                 echo ' ÷ ';
                 echo $value1;
+                echo ' = ? ';
             }
         }
         
