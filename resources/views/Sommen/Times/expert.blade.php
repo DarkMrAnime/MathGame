@@ -24,19 +24,10 @@
     echo ' = ';
     echo $value3;
     ?>
-    <form>
-    Antwoord: <input type="number" id="ant" name="ant"><br>
-    
-    <input type="submit"></br>
-
-    </form>
 
 
-    <?php
-    
 
-
-    ?>
+  
 
     </body>
 
