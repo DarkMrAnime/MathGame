@@ -1,5 +1,9 @@
 @extends('Sommen/index')
 
+@section('Difficulty')
+    Niveau: EXPERT
+@endsection
+
 @section('Sommen')
     <!DOCTYPE html>
     <html lang="en">

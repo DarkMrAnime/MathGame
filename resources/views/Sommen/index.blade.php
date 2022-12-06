@@ -12,12 +12,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
         html {
-            background-color: #29E2E6;
+            background-color: #C2F1F2;
         }
 
         body {
             margin: 0px;
-
         }
 
         .main-container {
@@ -37,46 +36,11 @@
         .info-sum-container {
             display: flex;
             justify-content: space-between;
-
-        }
-
-        .sommen-sum-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
-            font-size: 5vh;
-            color: black;
-            font-weight: bold;
-            background-color: #FF8A5B;
-            border-radius: 100px;
-            margin-left: 25%;
-            margin-right: 25%;
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            user-select: none;
-            font-family: 'Happy Monkey', cursive;
-        }
-
-        .antwoord-sum-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 100px;
-
         }
 
         .input-field {
             height: 25px;
             margin-right: 5px;
-            font-family: 'Happy Monkey', cursive;
-        }
-
-        .Submit-btn {
-            height: 25px;
-            width: 75px;
-            padding: 5px;
-            border: none;
-            border-radius: 3px;
-            background-color: #FF8A5B;
-            margin-bottom: 65px;
             font-family: 'Happy Monkey', cursive;
         }
 
@@ -89,6 +53,7 @@
             user-select: none;
             color: black;
             font-family: 'Happy Monkey', cursive;
+            width: 175px;
         }
 
         .niveau {
@@ -100,6 +65,9 @@
             user-select: none;
             color: black;
             font-family: 'Happy Monkey', cursive;
+            width: 175px;
+            display: flex;
+            justify-content: right;
         }
 
         .progress-bar-sum-container {
@@ -109,7 +77,6 @@
             margin-left: 30%;
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             user-select: none;
-
         }
 
         .grid {
@@ -131,19 +98,9 @@
         <div class="sum-container">
             <div class="info-sum-container">
                 <div class="score">Score: [SCORE]</div>
-                <div class="niveau">Niveau: [NIVEAU]</div>
+                <div class="niveau">@yield('Difficulty')</div>
             </div>
-            <div class="sommen-sum-container">
-                @yield('Sommen')
-            </div>
-            <div class="antwoord-sum-container">
-                <form action="" method="post">
-                    <input type="text" class="input-field" placeholder="Antwoord">
-                    <button type="submit" class="Submit-btn">
-                        Check
-                    </button>
-                </form>
-            </div>
+            @yield('Sommen')
             <div class="progress-bar-sum-container">
                 <div class="grid">
                     <div class="box"></div>
@@ -160,6 +117,9 @@
             </div>
         </div>
     </div>
+    <?php
+
+    ?>
 </body>
 
 </html>
