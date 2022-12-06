@@ -70,7 +70,6 @@
         grid-template-columns: 1fr;
     }
     }
->>>>>>> b120f75d1f4991826e30226d32c171704be6d658
 </style>
 
 
