@@ -79,8 +79,7 @@
 
     <h4>
         Op deze pagina kunt u de keuze maken voor welke sommen en welk niveau u wilt.
-    </h4> 
->>>>>>> b120f75d1f4991826e30226d32c171704be6d658
+    </h4> aan
 </div>
 
     <div class="grids">
