@@ -57,6 +57,16 @@ Route::get('/keer/expert', function () {
     return view('Sommen.Times.expert');
 });
 
+Route::get('/gemengd/basic', function () {
+    return view('Sommen.Gemengd.basic');
+});
+Route::get('/gemengd/advanced', function () {
+    return view('Sommen.Gemengd.advanced');
+});
+Route::get('/gemengd/expert', function () {
+    return view('Sommen.Gemengd.expert');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

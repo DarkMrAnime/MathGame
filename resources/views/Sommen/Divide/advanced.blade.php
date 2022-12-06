@@ -55,7 +55,7 @@
         ?>
     </div>
     <div class="antwoord-sum-container">
-        <form action="" method="post">
+        <form action="" name="MathForm" method="post">
             <input type="text" class="input-field" placeholder="Antwoord" name="answer" id="answer" />
             <button type="submit" class="Submit-btn">
                 Controleer
