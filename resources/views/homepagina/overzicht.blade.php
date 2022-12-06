@@ -8,6 +8,25 @@ h4{
 .plus{
     font-size: 10em;
     font-weight: bold;
+    background-color: red;
+    
+}
+.min{
+    font-size: 10em;
+    font-weight: bold;
+    background-color:orange;
+    
+}
+.deel{
+    font-size: 10em;
+    font-weight: bold;
+    background-color: yellow;
+    
+}
+.keer{
+    font-size: 10em;
+    font-weight: bold;
+    background-color: green;
     
 }
 .grids{
@@ -24,8 +43,8 @@ h4{
 <h4>Op deze pagina kunt u de keuze maken voor welke sommen en welk niveau u wilt.</h4>
 <div class="grids">
 <h1 class="plus">+</h1>
-<h1 class="plus">-</h1>
-<h1 class="plus">x</h1>
-<h1 class="plus">÷</h1>
+<h1 class="min">-</h1>
+<h1 class="keer">x</h1>
+<h1 class="deel">÷</h1>
 </div>
 </body>
