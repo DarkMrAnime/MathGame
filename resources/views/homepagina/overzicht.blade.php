@@ -10,7 +10,6 @@
             background-color: #eaff4f;
             
     }
-
     .a1:hover{
         scale: 1.05;
             
