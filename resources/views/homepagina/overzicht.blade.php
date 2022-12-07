@@ -75,6 +75,7 @@
     @media only screen and (max-width: 800px) {
         .grids {
             grid-template-columns: 1fr;
+
         }
     }
 </style>
@@ -85,7 +86,7 @@
         <h1>Welkom bij het rekenprogramma.</h1>
 
         <h4>
-            Op deze pagina kunt u de keuze maken voor welke sommen en welk niveau u wilt.
+            Op deze pagina kunt u de keuze maken voor welke sommen je wilt.
         </h4>
     </div>
 

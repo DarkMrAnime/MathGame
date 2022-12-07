@@ -77,8 +77,9 @@ Route::get('/gemengd/expert', function () {
     return view('Sommen.Gemengd.expert');
 });
 
-Route::get('/sommen/boot', function () {
-    return view('Sommen.boot');
+
+Route::get('/niveau', function () {
+    return view('tweede.niveau');
 });
 
 Route::middleware([
