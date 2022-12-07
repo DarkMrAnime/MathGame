@@ -67,6 +67,11 @@ Route::get('/gemengd/expert', function () {
     return view('Sommen.Gemengd.expert');
 });
 
+
+Route::get('/niveau', function () {
+    return view('tweede.niveau');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
