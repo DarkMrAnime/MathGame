@@ -55,7 +55,7 @@
         ?>
     </div>
     <div class="antwoord-sum-container">
-        <form action="" name="MathForm" method="post">
+        <form action="" method="post">
             <input type="text" class="input-field" placeholder="Antwoord" name="answer" id="answer" />
             <button type="submit" class="Submit-btn">
                 Controleer
@@ -81,10 +81,7 @@
 
     function check($output)
     {
-        $answer = $_GET['answer'];
-        if ($answer == $output) {
-        } else {
-        }
+        
     }
     ?>
 </body>
