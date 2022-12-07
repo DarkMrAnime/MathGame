@@ -18,9 +18,9 @@
     }
 
     .container-center {
-        margin-top: 250px;
         display: flex;
         justify-content: center;
+        margin-top: 110px;
     }
 
     .container-bottom {
@@ -33,11 +33,10 @@
         height: 125px;
         background-color: #FF8A5B;
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 25px;
         text-align: center;
         font-size: 5rem;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-            rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
         text-shadow: 2px 2px black
     }
@@ -47,11 +46,10 @@
         height: 125px;
         background-color: #FF8A5B;
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 25px;
         text-align: center;
         font-size: 5rem;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-            rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
         text-shadow: 2px 2px black
     }
@@ -61,13 +59,12 @@
         height: 125px;
         background-color: #FF8A5B;
         margin-left: 10px;
-        margin-right: 10px;
+        margin-right: 25px;
         text-align: center;
         font-size: 5rem;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-            rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
-        text-shadow: 2px 2px black
+        text-shadow: 2px 2px black;
     }
 
     .deel {
@@ -78,8 +75,7 @@
         margin-right: 10px;
         text-align: center;
         font-size: 5rem;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-            rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
         text-shadow: 2px 2px black
     }
@@ -193,26 +189,26 @@
     </div>
 
     <div class="container-center">
-        <a class="a1" href="">
+        <a class="a1" href="/niveauplus">
             <div class="plus">+</div>
             <div class="text">Plussommen</div>
 
         </a>
 
-        <a class="a1" href="">
+        <a class="a1" href="/niveaumin">
             <div class="min">-</div>
             <div class="text">Minsommen</div>
 
         </a>
 
-        <a class="a1" href="">
+        <a class="a1" href="/niveaukeer">
             <div class="keer">X</div>
             <div class="text">Keersommen</div>
 
 
         </a>
 
-        <a class="a1" href="">
+        <a class="a1" href="/niveaudeel">
             <div class="deel">÷</div>
             <div class="text">Deelsommen</div>
 
