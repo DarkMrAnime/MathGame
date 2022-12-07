@@ -17,8 +17,13 @@
         justify-content: center;
     }
 
-    .container-bottom {
+    .container-center {
         margin-top: 250px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-bottom {
         display: flex;
         justify-content: center;
     }
@@ -36,6 +41,7 @@
         color: #25CED1;
         text-shadow: 2px 2px black
     }
+
     .min {
         width: 125px;
         height: 125px;
@@ -49,6 +55,7 @@
         color: #25CED1;
         text-shadow: 2px 2px black
     }
+
     .keer {
         width: 125px;
         height: 125px;
@@ -62,6 +69,7 @@
         color: #25CED1;
         text-shadow: 2px 2px black
     }
+
     .deel {
         width: 125px;
         height: 125px;
@@ -83,7 +91,7 @@
     }
 
     @media only screen and (max-width: 800px) {
-        .container-bottom {
+        .container-center {
             display: inline;
         }
     }
@@ -94,60 +102,72 @@
             margin-bottom: 20px;
         }
     }
+
     @media only screen and (max-width: 800px) {
         .min {
             margin-top: 20px;
             margin-bottom: 20px;
         }
     }
+
     @media only screen and (max-width: 800px) {
         .keer {
             margin-top: 20px;
             margin-bottom: 20px;
         }
     }
+
     @media only screen and (max-width: 800px) {
         .deel {
             margin-top: 20px;
             margin-bottom: 20px;
         }
     }
+
     .a1 {
         text-decoration: none;
         transition: 0.3s;
         height: 125px;
     }
+
     .a1:hover {
         scale: 1.05;
     }
+
     .plus:hover {
         background-color: #25CED1;
         color: #FCEADE;
         text-shadow: 2px 2px black;
     }
+
     .min:hover {
         background-color: #25CED1;
         color: #FCEADE;
         text-shadow: 2px 2px black;
     }
+
     .keer:hover {
         background-color: #25CED1;
         color: #FCEADE;
         text-shadow: 2px 2px black;
     }
+
     .deel:hover {
         background-color: #25CED1;
         color: #FCEADE;
         text-shadow: 2px 2px black;
     }
-    h1{
+
+    h1 {
         text-shadow: 2px 2px #FF8A5B;
         color: black;
     }
-    h4{
+
+    h4 {
         text-shadow: 2px 2px #FF8A5B;
         color: black;
     }
+
     .text {
         width: 125px;
         height: 125px;
@@ -157,7 +177,6 @@
         text-align: center;
         font-size: 1rem;
         color: black;
-        left: 314px;
     }
 </style>
 
@@ -173,17 +192,32 @@
         </div>
     </div>
 
-    <div class="container-bottom">
-        <a class="a1" href=""><div class="plus">+</div></a>
+    <div class="container-center">
+        <a class="a1" href="">
+            <div class="plus">+</div>
+            <div class="text">Plussommen</div>
 
-        <a class="a1" href=""><div class="min">-</div></a>
+        </a>
 
-        <a class="a1" href=""><div class="keer">X</div></a>
+        <a class="a1" href="">
+            <div class="min">-</div>
+            <div class="text">Minsommen</div>
 
-        <a class="a1" href=""><div class="deel">÷</div></a>
+        </a>
+
+        <a class="a1" href="">
+            <div class="keer">X</div>
+            <div class="text">Keersommen</div>
+
+
+        </a>
+
+        <a class="a1" href="">
+            <div class="deel">÷</div>
+            <div class="text">Deelsommen</div>
+
+        </a>
     </div>
-    <div class="text">Plussommen</div>
-    <div class="text">Minsommen</div>
-    <div class="text">Deelsommen</div>
-    <div class="text">Keersommen</div>
+    <div class="container-bottom">
+    </div>
 </div>
