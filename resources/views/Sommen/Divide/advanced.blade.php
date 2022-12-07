@@ -23,6 +23,7 @@
             box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
             user-select: none;
             font-family: "Happy Monkey", cursive;
+            overflow: hidden;
         }
 
         .antwoord-sum-container {
@@ -81,7 +82,6 @@
 
     function check($output)
     {
-        
     }
     ?>
 </body>
