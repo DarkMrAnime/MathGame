@@ -80,6 +80,7 @@ Route::get('/gemengd/expert', function () {
 Route::get('/sommen/boot', function () {
     return view('Sommen.boot');
 });
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

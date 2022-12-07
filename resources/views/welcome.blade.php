@@ -12,46 +12,18 @@
 
     <!-- Styles -->
     <style>
-        html{
+        html {
             background-color: #FCEADE;
         }
-        .block{
-            background-color: white;
-            width: 80%;
-            height: 500px;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 10px;
-            padding-top: 25px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            }
-        .main{
-            display: flex;
-            justify-content: center;
-            margin-top: 100px;
-        }
-    @media only screen and (max-width: 800px) {
-    .block {
-        background-color: white;
-            width: 80%;
-            height: 1500px;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 10px;
-            padding-top: 25px;
-            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
-    }
     </style>
 </head>
 
 <body class="antialiased">
     @include('homepagina.navbar')
-<div class="main">
-    <div class="block">
-    @include('homepagina.overzicht')
-    </div>
-</div>
+
+    <!-- @include('homepagina.overzicht') -->
+    @include('homepagina.test')
+
     {{-- @include('homepagina.footer') --}}
 </body>
 
