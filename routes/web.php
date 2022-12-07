@@ -77,6 +77,9 @@ Route::get('/gemengd/expert', function () {
     return view('Sommen.Gemengd.expert');
 });
 
+Route::get('/sommen/boot', function () {
+    return view('Sommen.boot');
+});
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
