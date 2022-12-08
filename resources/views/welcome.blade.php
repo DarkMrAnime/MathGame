@@ -21,7 +21,6 @@
 <body class="antialiased">
     @include('homepagina.navbar')
 
-    <!-- @include('homepagina.overzicht') -->
     @include('homepagina.test')
 
     {{-- @include('homepagina.footer') --}}

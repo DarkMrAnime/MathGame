@@ -81,8 +81,17 @@ Route::get('/gemengd/expert', function () {
 });
 
 
-Route::get('/niveau', function () {
-    return view('tweede.niveau');
+Route::get('/niveauplus', function () {
+    return view('tweede.niveauplus');
+});
+Route::get('/niveaumin', function () {
+    return view('tweede.niveaumin');
+});
+Route::get('/niveaukeer', function () {
+    return view('tweede.niveaukeer');
+});
+Route::get('/niveaudeel', function () {
+    return view('tweede.niveaudeel');
 });
 
 Route::middleware([
