@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MinSommenController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,6 +28,8 @@ Route::get('/min/advanced', function () {
 Route::get('/min/expert', function () {
     return view('Sommen.Min.expert');
 });
+Route::post('/min/basic', [MinSommenController::class, 'basicGet']);
+
 
 // Plus routes
 Route::get('/plus/basic', function () {
