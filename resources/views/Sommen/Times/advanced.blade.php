@@ -1,5 +1,9 @@
 @extends('Sommen/index')
 
+@section('Difficulty')
+    Niveau: EXPERT
+@endsection
+
 @section('Sommen')
     <!DOCTYPE html>
     <html lang="en">
@@ -54,15 +58,14 @@
         <div class="sommen-sum-container">
             <?php
             $output = createSum();
+            echo "<div style='display:none;' id='antwoord'>" . $output . '</div>';
             ?>
         </div>
         <div class="antwoord-sum-container">
-            <form action="" method="post">
-                <input type="text" class="input-field" placeholder="Antwoord" name="answer" id="answer" />
-                <button type="submit" class="Submit-btn">
-                    Controleer
-                </button>
-            </form>
+            <input type="text" class="input-field" placeholder="Antwoord" name="answer" id="answer" />
+            <button type="submit" class="Submit-btn" id="btnCheckAntwoord" onclick="checkAntwoord()">
+                Controleer
+            </button>
         </div>
 
         <?php
@@ -79,7 +82,18 @@
             return $value3;
         }
         ?>
+        <script>
+            function checkAntwoord() {
+                var inputAntwoord = document.getElementById("answer").value;
+                var correctAntwoord = document.getElementById("antwoord").innerHTML;
 
+                if (inputAntwoord == correctAntwoord) {
+                    console.log("antwoord = goed");
+                } else {
+                    console.log("antwoord = fout");
+                }
+            }
+        </script>
 
     </body>
 
