@@ -13,9 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
     return view('welcome');
 });
+
 
 // Min routes
 Route::get('/min/basic', function () {
@@ -75,6 +78,11 @@ Route::get('/gemengd/advanced', function () {
 });
 Route::get('/gemengd/expert', function () {
     return view('Sommen.Gemengd.expert');
+});
+
+
+Route::get('/boot', function () {
+    return view('Sommen.boot');
 });
 
 
