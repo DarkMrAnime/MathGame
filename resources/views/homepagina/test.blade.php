@@ -155,12 +155,12 @@
     }
 
     h1 {
-        text-shadow: 2px 2px #FF8A5B;
+        text-shadow: 1px 1px #FF8A5B;
         color: black;
     }
 
     h4 {
-        text-shadow: 2px 2px #FF8A5B;
+        text-shadow: 1px 1px #FF8A5B;
         color: black;
     }
 
@@ -182,8 +182,7 @@
             <h1>Welkom bij het rekenprogramma.</h1>
 
             <h4>
-                Op deze pagina kunt u de keuze maken voor welke sommen en welk
-                niveau u wilt.
+                Op deze pagina kunt u de keuze maken voor welke sommen u wilt.
             </h4>
         </div>
     </div>
