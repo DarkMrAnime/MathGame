@@ -1,7 +1,7 @@
 @extends('Sommen/index')
 
 @section('Difficulty')
-    Niveau: EXPERT
+    Niveau: BASIC
 @endsection
 
 @section('Sommen')
