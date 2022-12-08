@@ -38,7 +38,9 @@
         font-size: 5rem;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
-        text-shadow: 2px 2px black
+        text-shadow: 2px 2px black;
+        font-family: 'Chewy', cursive;
+
     }
 
     .min {
@@ -51,7 +53,9 @@
         font-size: 5rem;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
-        text-shadow: 2px 2px black
+        text-shadow: 2px 2px black;
+        font-family: 'Chewy', cursive;
+
     }
 
     .keer {
@@ -65,6 +69,8 @@
         box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
         text-shadow: 2px 2px black;
+        font-family: 'Chewy', cursive;
+
     }
 
     .deel {
@@ -77,7 +83,9 @@
         font-size: 5rem;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
-        text-shadow: 2px 2px black
+        text-shadow: 2px 2px black;
+        font-family: 'Chewy', cursive;
+
     }
 
     @media only screen and (max-width: 800px) {
@@ -157,14 +165,18 @@
     h1 {
         text-shadow: 1px 1px #FF8A5B;
         color: black;
+        font-family: 'Chewy', cursive;
     }
 
     h4 {
         text-shadow: 1px 1px #FF8A5B;
         color: black;
+        font-family: 'Happy Monkey', cursive;
     }
 
     .text {
+        font-family: 'Happy Monkey', cursive;
+
         width: 125px;
         height: 125px;
         position: relative;
@@ -191,20 +203,16 @@
         <a class="a1" href="/niveauplus">
             <div class="plus">+</div>
             <div class="text">Plussommen</div>
-
         </a>
 
         <a class="a1" href="/niveaumin">
             <div class="min">-</div>
             <div class="text">Minsommen</div>
-
         </a>
 
         <a class="a1" href="/niveaukeer">
             <div class="keer">X</div>
             <div class="text">Keersommen</div>
-
-
         </a>
 
         <a class="a1" href="/niveaudeel">

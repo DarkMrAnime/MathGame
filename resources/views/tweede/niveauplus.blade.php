@@ -1,7 +1,11 @@
 <style>
-     html {
-            background-color: #FCEADE;
-        }
+    @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+    html {
+        background-color: #FCEADE;
+    }
+
     .container {
         margin-top: 75px;
         margin-bottom: 75px;
@@ -42,6 +46,8 @@
         box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
         text-shadow: 1px 1px black;
+        font-family: 'Chewy', cursive;
+
     }
 
     .advanced {
@@ -54,7 +60,9 @@
         font-size: 2.5rem;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
-        text-shadow: 1px 1px black
+        text-shadow: 1px 1px black;
+        font-family: 'Chewy', cursive;
+
     }
 
     .expert {
@@ -67,7 +75,9 @@
         font-size: 2.5rem;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
         color: #25CED1;
-        text-shadow: 1px 1px black
+        text-shadow: 1px 1px black;
+        font-family: 'Chewy', cursive;
+
     }
 
 
@@ -84,25 +94,25 @@
     }
 
     @media only screen and (max-width: 800px) {
-       .basic {
-           margin-top: 20px;
-           margin-bottom: 20px;
-       }
-   }
+        .basic {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 
-   @media only screen and (max-width: 800px) {
-       .advanced {
-           margin-top: 20px;
-           margin-bottom: 20px;
-       }
-   }
+    @media only screen and (max-width: 800px) {
+        .advanced {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 
-   @media only screen and (max-width: 800px) {
-       .expert {
-           margin-top: 20px;
-           margin-bottom: 20px;
-       }
-   }
+    @media only screen and (max-width: 800px) {
+        .expert {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 
 
     .a1 {
@@ -136,11 +146,15 @@
     h1 {
         text-shadow: 1px 1px #FF8A5B;
         color: black;
+        font-family: 'Happy Monkey', cursive;
+
     }
 
     h4 {
         text-shadow: 1px 1px #FF8A5B;
         color: black;
+        font-family: 'Happy Monkey', cursive;
+
     }
 </style>
 @include('homepagina.navbar')
@@ -150,7 +164,7 @@
             <h1>Kies een niveau.</h1>
 
             <h4>
-                Op deze pagina kan je niveau kiezen.<br/>
+                Op deze pagina kan je niveau kiezen.<br />
                 Kies uit de volgende niveau's:
             </h4>
         </div>
@@ -159,19 +173,19 @@
     <div class="container-center">
         <a class="a1" href="/plus/basic">
             <div class="basic">Basic</div>
-        
+
 
         </a>
 
         <a class="a1" href="/plus/advanced">
             <div class="advanced">Advanced</div>
-          
+
 
         </a>
 
         <a class="a1" href="/plus/expert">
             <div class="expert">Expert</div>
-            
+
 
 
         </a>

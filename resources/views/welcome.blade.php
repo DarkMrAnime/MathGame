@@ -12,6 +12,9 @@
 
     <!-- Styles -->
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
         html {
             background-color: #FCEADE;
         }
