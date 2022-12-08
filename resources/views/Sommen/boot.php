@@ -8,6 +8,63 @@ p.score {
   text-align: center;
 }
 
+
+#progress {
+  position: relative;
+  margin-bottom: 30px;   
+}
+
+#progress-bar {
+  position: absolute;
+  background: lightseagreen;
+  height: 5px;
+  width: 0%;
+  top: 50%;
+  left: 0;
+}
+
+#progress-num {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+#progress-num::before {
+  content: "";
+  background-color: lightgray;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 100%;
+  z-index: -1;
+}
+
+#progress-num .step {
+  border: 3px solid lightgray;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 14px;    
+  position: relative;
+  z-index: 1;
+}
+
+#progress-num .step.active {
+  border-color: lightseagreen;
+  background-color: lightseagreen;
+  color: #fff;
+}
+
+
+
 </style> 
 
 <!-- CSS only -->
@@ -34,39 +91,74 @@ p.score {
 
         <div id="bottom">Bottom Content Div</div>
 
-        <html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+       <!-- progress bar -->
 
-<div class="w3-container">
-  <h2></h2>
-
-  <div class="w3-light-grey">
-    <div id="myBar" class="w3-green" style="height:24px;width:0"></div>
-  </div>
-  <br>
-
-  <button class="w3-button w3-green" onclick="move()">Click Me</button> 
+       <div id="progress">
+  <div id="progress-bar"></div>
+  <ul id="progress-num">
+    <li class="step active">1</li>
+    <li class="step">2</li>
+    <li class="step">3</li>
+    <li class="step">4</li>
+    <li class="step">5</li>
+    <li class="step">6</li>
+    <li class="step">7</li>
+    <li class="step">8</li>
+    <li class="step">9</li>
+    <li class="step">10</li>
+  </ul>
 </div>
 
-<script>
-function move() {
-  var elem = document.getElementById("myBar");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-    }
-  }
-}
-</script>
+<button id="progress-prev" class="btn" disabled>Prev</button>
+<button id="progress-next" class="btn">Next</button>
 
+<script> 
+const progressBar = document.getElementById("progress-bar");
+const progressNext = document.getElementById("progress-next");
+const progressPrev = document.getElementById("progress-prev");
+const steps = document.querySelectorAll(".step");
+let active = 1;
+
+progressNext.addEventListener("click", () => {
+  active++;
+  if (active > steps.length) {
+    active = steps.length;
+  }
+  updateProgress();
+});
+
+progressPrev.addEventListener("click", () => {
+  active--;
+  if (active < 1) {
+    active = 1;
+  }
+  updateProgress();
+});
+
+const updateProgress = () => {
+  // toggle active class on list items
+  steps.forEach((step, i) => {
+    if (i < active) {
+      step.classList.add("active");
+    } else {
+      step.classList.remove("active");
+    }
+  });
+  // set progress bar width  
+  progressBar.style.width = 
+    ((active - 1) / (steps.length - 1)) * 100 + "%";
+  // enable disable prev and next buttons
+  if (active === 1) {
+    progressPrev.disabled = true;
+  } else if (active === steps.length) {
+    progressNext.disabled = true;
+  } else {
+    progressPrev.disabled = false;
+    progressNext.disabled = false;
+  }
+};
+
+</script> 
 </body>
 </html> 
 
@@ -80,39 +172,3 @@ function move() {
   </div>
 </div>
 
-
-<html>
-<title>W3.CSS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
-
-<div class="w3-container">
-  <h2>Dynamic Progress Bar</h2>
-
-  <div class="w3-light-grey">
-    <div id="myBar" class="w3-green" style="height:24px;width:0"></div>
-  </div>
-  <br>
-
-  <button class="w3-button w3-green" onclick="move()">Click Me</button> 
-</div>
-
-<script>
-function move() {
-  var elem = document.getElementById("myBar");   
-  var width = 1;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width >= 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-    }
-  }
-}
-</script>
-
-</body>
-</html> 
