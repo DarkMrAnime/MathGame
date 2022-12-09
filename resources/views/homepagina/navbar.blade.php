@@ -115,6 +115,7 @@
     /* logo styles */
     .LogoPhoto {
         width: 70px;
+        border-radius: 100px;
     }
 
     a:active,
@@ -127,10 +128,9 @@
 
 <header>
     <nav>
-        <img class="LogoPhoto" src="" alt="">
+        <img class="LogoPhoto" src="images/logo.png" alt="">
         <ul class="menu" style="padding-left:10px">
             <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
             <li>
                 @if (Route::has('login'))
                     @auth

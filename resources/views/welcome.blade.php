@@ -25,8 +25,6 @@
     @include('homepagina.navbar')
 
     @include('homepagina.test')
-
-    {{-- @include('homepagina.footer') --}}
 </body>
 
 </html>
