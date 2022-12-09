@@ -85,11 +85,6 @@ Route::get('/boot', function () {
     return view('Sommen.boot');
 });
 
-
-Route::get('/niveau', function () {
-    return view('tweede.niveau');
-});
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
