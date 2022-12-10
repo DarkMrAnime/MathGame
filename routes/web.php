@@ -99,6 +99,10 @@ Route::get('/niveaudeel', function () {
     return view('tweede.niveaudeel');
 });
 
+Route::get('/niveaugemengd', function () {
+    return view('tweede.niveaugemengde');
+});
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
