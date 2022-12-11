@@ -72,7 +72,7 @@
         function createSum()
         {
             $value1 = rand(0, 10);
-            $value2 = rand(0, $value1);
+            $value2 = rand(0, 10);
             $value3 = $value1 * $value2;
         
             echo $value1;
