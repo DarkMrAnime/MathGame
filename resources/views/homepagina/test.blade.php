@@ -78,6 +78,20 @@
         height: 125px;
         background-color: #FF8A5B;
         margin-left: 10px;
+        margin-right: 25px;
+        text-align: center;
+        font-size: 5rem;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+        color: #25CED1;
+        text-shadow: 2px 2px black;
+        font-family: 'Chewy', cursive;
+
+    }
+    .gemengd {
+        width: 125px;
+        height: 125px;
+        background-color: #FF8A5B;
+        margin-left: 10px;
         margin-right: 10px;
         text-align: center;
         font-size: 5rem;
@@ -127,6 +141,12 @@
             margin-bottom: 20px;
         }
     }
+    @media only screen and (max-width: 800px) {
+        .gemengd {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
 
     .a1 {
         text-decoration: none;
@@ -161,8 +181,12 @@
         color: #FCEADE;
         text-shadow: 2px 2px black;
     }
+    .gemengd:hover {
+        background-color: #25CED1;
+        color: #FCEADE;
+    }   
 
-    h1 {
+    h1{
         text-shadow: 1px 1px #FF8A5B;
         color: black;
         font-family: 'Chewy', cursive;
@@ -218,6 +242,11 @@
         <a class="a1" href="/niveaudeel">
             <div class="deel">÷</div>
             <div class="text">Deelsommen</div>
+
+        </a>
+        <a class="a1" href="/niveaugemengd">
+            <div class="gemengd">=</div>
+            <div class="text">Gemengdesommen</div>
 
         </a>
     </div>
